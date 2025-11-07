@@ -18,3 +18,18 @@ seem like i could configure it using bash???
 https://github.com/yorukot/superfile
 
     fallback is yazi
+
+wezterm final answer seem sick and cool
+https://wezterm.org/index.html
+ 
+    yay -S wezterm
+
+font is interesting need more time to research and see what i like 
+
+still have not decided on a wallpaper most likely custom 
+gimp???
+
+possible design are dreamcore
+yeah just that god i love illit and ifeye
+
+

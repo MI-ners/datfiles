@@ -33,3 +33,7 @@ possible design are dreamcore
 yeah just that god i love illit and ifeye
 
 
+make scripts for auto search update for both pacman and aur 
+
+make scripts for timeshift or whaterver one it uses 
+

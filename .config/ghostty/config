@@ -13,3 +13,5 @@ adjust-cursor-thickness = 5
 cursor-style = block
 cursor-style-blink = true
 cursor-opacity = 0.8
+
+confirm-close-surface = false

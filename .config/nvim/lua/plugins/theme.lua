@@ -1,11 +1,12 @@
 return {
-  'ribru17/bamboo.nvim',
-  lazy = false,
-  priority = 1000,
-  config = function()
-    require('bamboo').setup {
-      -- optional configuration here
-    }
-    require('bamboo').load()
-  end,
-} 
+	"ficcdaf/ashen.nvim",
+	-- optional but recommended,
+	-- pin to the latest stable release:
+	tag = "*",
+	lazy = false,
+	priority = 1000,
+	-- configuration is optional!
+	opts = {
+		-- your settings here
+	},
+}

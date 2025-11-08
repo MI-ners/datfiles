@@ -1,10 +1,15 @@
 font-family = "Maple Mono Medium"
 font-size = 14
 command = /usr/bin/zsh -l
-theme = Earthsong
+theme = IC Orange PPL
 mouse-hide-while-typing = true
 
+#keybind
+keybind = ctrl+enter=unbind
+# Disable resize overlay
+resize-overlay = never
 
+adjust-cursor-thickness = 5
 cursor-style = block
-cursor-style-blink = false
+cursor-style-blink = true
 cursor-invert-fg-bg = true

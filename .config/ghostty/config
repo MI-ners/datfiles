@@ -12,4 +12,4 @@ resize-overlay = never
 adjust-cursor-thickness = 5
 cursor-style = block
 cursor-style-blink = true
-cursor-invert-fg-bg = true
+cursor-opacity = 0.8

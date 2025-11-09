@@ -1,12 +1,8 @@
 return {
-	"ficcdaf/ashen.nvim",
-	-- optional but recommended,
-	-- pin to the latest stable release:
-	tag = "*",
+	"xero/miasma.nvim",
 	lazy = false,
 	priority = 1000,
-	-- configuration is optional!
-	opts = {
-		-- your settings here
-	},
+	config = function()
+		vim.cmd("colorscheme miasma")
+	end,
 }

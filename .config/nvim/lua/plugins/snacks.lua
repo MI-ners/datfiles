@@ -13,7 +13,7 @@ return {
 				{ section = "startup" },
 				{
 					section = "terminal",
-					cmd = "ascii-image-converter ~/Downloads/SYBAU.jpg -C -c -H 25",
+					cmd = "ascii-image-converter ~/Pictures/bomb.jpg -C -c -b --dither -d 55,30",
 					random = 10,
 					pane = 2,
 					indent = 1,

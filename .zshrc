@@ -30,3 +30,6 @@ function y() {
 }
 
 export EDITOR="nvim"
+
+alias updall='sudo pacman -Syu && yay -Sua'
+

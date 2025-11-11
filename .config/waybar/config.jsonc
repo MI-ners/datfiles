@@ -20,7 +20,7 @@
     "custom/space",
   ],
   "idle_inhibitor": {
-    "format": "{icon}",
+    "format": "| {icon} |",
     "format-icons": {
       "activated": "∃",
       "deactivated": "∀"
@@ -36,7 +36,7 @@
   },
   "clock": {
     // "timezone": "America/New_York",
-    "format": " {:%I:%M %p} ",
+    "format": " | Day: {:%e | %I:%M %p} | ",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
   },
   "battery": {
@@ -67,7 +67,7 @@
   },
   "network": {
     // "interface": "wlp2*", // (Optional) To force the use of this interface
-    "format-wifi":" ",
+    "format-wifi":"|   |",
     "format-ethernet": "{ipaddr}/{cidr} ",
     "tooltip-format": "{ifname} via {gwaddr} ",
     "format-linked": "{ifname} (No IP) ",
@@ -77,7 +77,7 @@
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
     "format": "{volume}% {icon} ",
-    "format-bluetooth": "{volume}%   {format_source}",
+    "format-bluetooth": "| {volume}%   |",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
     "format-source": " ",

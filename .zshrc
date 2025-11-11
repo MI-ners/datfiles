@@ -4,7 +4,7 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="nanotech"
+#ZSH_THEME="nanotech"
 # Uncomment the following line to enable command auto-correction.
 
 COMPLETION_WAITING_DOTS="true"
@@ -33,3 +33,10 @@ export EDITOR="nvim"
 
 alias updall='sudo pacman -Syu && yay -Sua'
 
+#maybe
+eval "$(starship init zsh)"
+
+# Add a newline between commands
+# https://github.com/starship/starship/issues/560
+precmd() { precmd() { echo "" } }
+alias clear="precmd() { precmd() { echo } } && clear"

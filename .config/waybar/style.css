@@ -1,6 +1,6 @@
 * {
     font-family: 'Maple Mono Medium', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     border-radius: 9px;
 }
 
@@ -54,7 +54,7 @@ button:hover {
 
 #workspaces button {
     transition: 0.2s ease-in-out;
-    padding: 0 5px;
+    padding: 9 9px;
     background-color: transparent;
     color: #ffffff;
 }

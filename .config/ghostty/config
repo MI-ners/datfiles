@@ -9,7 +9,7 @@ keybind = ctrl+enter=unbind
 # Disable resize overlay
 resize-overlay = never
 
-adjust-cursor-thickness = 5
+adjust-cursor-thickness = 3
 cursor-style = block
 cursor-style-blink = true
 cursor-opacity = 0.8

@@ -1,8 +1,9 @@
 return {
-	"xero/miasma.nvim",
+	"uhs-robert/oasis.nvim",
 	lazy = false,
 	priority = 1000,
 	config = function()
-		vim.cmd("colorscheme miasma")
+		require("oasis").setup() -- (see Configuration below for all customization options)
+		vim.cmd.colorscheme("oasis-dune") -- After setup, apply theme (or a any style like "oasis-night")
 	end,
 }

@@ -10,7 +10,6 @@
   ],
   "modules-center": [
     "clock",
-    "custom/mars",
   ],
   "modules-right": [
     "idle_inhibitor",

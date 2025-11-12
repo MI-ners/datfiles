@@ -82,6 +82,7 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
+/*#custom/mars*/
 #custom-space
 #clock,
 #battery,
@@ -120,6 +121,10 @@ button:hover {
     margin-right: 0;
 }
 
+/*)#custom/mars {
+    background-color: #6B301D;
+    color: #FFAE68;
+}*/
 #clock {
     background-color: #6B301D;
     color: #FFAE68;

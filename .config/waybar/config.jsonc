@@ -10,7 +10,7 @@
   ],
   "modules-center": [
     "clock",
-  ],
+],
   "modules-right": [
     "idle_inhibitor",
     "pulseaudio",
@@ -18,7 +18,7 @@
     "power-profiles-daemon",
     "battery",
     "custom/space",
-  ],
+],
   "idle_inhibitor": {
     "format": "| {icon} |",
     "format-icons": {
@@ -36,9 +36,9 @@
   },
    "clock": {
     // "timezone": "America/New_York",
-    "format": " | Day: {:%e |  ♂  | %I:%M %p} | ",
+    "format": " | Day {:%e |  ♂  | %I:%M %p} | ",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-  },
+},
   "battery": {
     "states": {
       "good": 95,

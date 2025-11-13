@@ -10,6 +10,8 @@ ZSH_THEME="nanotech"
 COMPLETION_WAITING_DOTS="true"
 plugins=(git archlinux pip python zsh-autosuggestions zsh-syntax-highlighting)
 
+#dumps the .zsh dumps elsewhere
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
 source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
@@ -40,3 +42,7 @@ eval "$(starship init zsh)"
 # https://github.com/starship/starship/issues/560
 precmd() { precmd() { echo "" } }
 alias clear="precmd() { precmd() { echo } } && clear"
+
+
+
+

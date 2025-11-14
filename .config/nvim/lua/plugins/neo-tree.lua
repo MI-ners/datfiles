@@ -8,8 +8,9 @@ return {
 			"nvim-tree/nvim-web-devicons", -- optional, but recommended
 		},
 		config = function()
-			lazy = false, vim.keymap.set("n", "<C-n>", ":Neotree filesystem reveal left<CR>", {})
-			vim.keymap.set("n", "<C-g>", ":Neotree close<CR>", {})
+			lazy = false
+			vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal left<CR>", {})
+			vim.keymap.set("n", "<leader>ew", ":Neotree close<CR>", {})
 		end,
 	},
 }

@@ -11,3 +11,7 @@ vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 vim.o.termguicolors = true
+
+-- In init.lua
+vim.api.nvim_set_keymap("n", "<F1>", "<nop>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<F1>", "<nop>", { noremap = true, silent = true })

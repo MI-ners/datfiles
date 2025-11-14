@@ -34,5 +34,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 vim.keymap.set({ "n", "x" }, "<leader>ca", function()
 	require("tiny-code-action").code_action()
 end, { noremap = true, silent = true })
-
-vim.keymap.set("n", "s", "<Nop>")

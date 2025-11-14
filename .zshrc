@@ -4,7 +4,6 @@
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="nanotech"
 # Uncomment the following line to enable command auto-correction.
 
 COMPLETION_WAITING_DOTS="true"

@@ -11,12 +11,14 @@ return {
 		lazy = false,
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "pyright" },
+				ensure_installed = { "lua_ls", "pyright", "clangd" },
 			})
 			vim.lsp.config("lua_ls", { settings = {} })
 			vim.lsp.config("pyright", {})
 			vim.lsp.enable("lua_ls")
 			vim.lsp.enable("pyright")
+			vim.lsp.config("clangd", {})
+			vim.lsp.enable("clangd")
 		end,
 	},
 	{
@@ -25,6 +27,7 @@ return {
 	},
 	{
 		"j-hui/fidget.nvim",
+		version = "*",
 		opts = {},
 	},
 }

@@ -13,8 +13,6 @@ vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
 vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
 vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
-vim.api.nvim_set_keymap("i", "jk", "<Esc>", { noremap = false })
-
 vim.diagnostic.config({ virtual_text = true })
 
 vim.o.termguicolors = true
@@ -25,3 +23,5 @@ vim.g.loaded_man_plugin = 1 -- or similar variable for your plugin
 
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+vim.opt.background = "dark"

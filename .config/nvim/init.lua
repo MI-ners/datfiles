@@ -33,3 +33,5 @@ vim.keymap.set({ "n", "x" }, "<leader>ca", function()
 end, { noremap = true, silent = true })
 
 vim.lsp.enable("lua_ls")
+vim.lsp.enable("pyright")
+vim.lsp.enable("clangd")

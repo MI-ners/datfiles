@@ -20,7 +20,6 @@ else
   export EDITOR='nvim'
 fi
 
-export TERM=xterm-256color
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -43,5 +42,5 @@ precmd() { precmd() { echo "" } }
 alias clear="precmd() { precmd() { echo } } && clear"
 
 
-
+export TERM=xterm-kitty
 

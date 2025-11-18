@@ -33,14 +33,7 @@ export EDITOR="nvim"
 
 alias updall='sudo pacman -Syu && yay -Sua'
 
-#maybe
 eval "$(starship init zsh)"
-
-# Add a newline between commands
-# https://github.com/starship/starship/issues/560
-precmd() { precmd() { echo "" } }
-alias clear="precmd() { precmd() { echo } } && clear"
-
 
 export TERM=xterm-kitty
 

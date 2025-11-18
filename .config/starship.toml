@@ -1,6 +1,6 @@
 add_newline = false
 
-format = "$username$hostname$directory$git_branch$git_status$fill$python$cpp$line_break$character(italics)"
+format = "$username$hostname$directory$git_branch$git_status$python$cpp$character(italics)"
 continuation_prompt = "[.](bright-black) "
 
 [username]

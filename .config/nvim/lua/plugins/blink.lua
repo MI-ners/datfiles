@@ -9,7 +9,6 @@ return {
 			})
 		end,
 	},
-
 	-- blink.cmp with Copilot source
 	{
 		"saghen/blink.cmp",
@@ -39,31 +38,6 @@ return {
 			},
 			appearance = {
 				kind_icons = {
-					Text = "",
-					Method = "",
-					Function = "",
-					Constructor = "",
-					Field = "",
-					Variable = "",
-					Class = "ﴯ",
-					Interface = "",
-					Module = "",
-					Property = "ﰠ",
-					Unit = "",
-					Value = "",
-					Enum = "",
-					Keyword = "",
-					Snippet = "",
-					Color = "",
-					File = "",
-					Reference = "",
-					Folder = "",
-					EnumMember = "",
-					Constant = "",
-					Struct = "",
-					Event = "",
-					Operator = "",
-					TypeParameter = "",
 					Copilot = "", -- custom icon for Copilot
 				},
 			},

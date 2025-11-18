@@ -1,29 +1,72 @@
 return {
-	"saghen/blink.cmp",
-	dependencies = { "rafamadriz/friendly-snippets" },
-
-	version = "1.*",
-
-	---@module 'blink.cmp'
-	---@type blink.cmp.Config
-	opts = {
-		keymap = {
-			preset = "default",
-			["<CR>"] = { "accept", "fallback" },
-			["<C><leader>"] = { "show" },
-		},
-
-		appearance = {
-			nerd_font_variant = "mono",
-		},
-
-		completion = { documentation = { auto_show = true } },
-
-		sources = {
-			default = { "lsp", "path", "snippets", "buffer" },
-		},
-
-		fuzzy = { implementation = "prefer_rust_with_warning" },
+	-- GitHub Copilot engine
+	{
+		"zbirenbaum/copilot.lua",
+		config = function()
+			require("copilot").setup({
+				suggestion = { enabled = false }, -- disable ghost text
+				panel = { enabled = false }, -- disable Copilot panel
+			})
+		end,
 	},
-	opts_extend = { "sources.default" },
+
+	-- blink.cmp with Copilot source
+	{
+		"saghen/blink.cmp",
+		dependencies = {
+			"giuxtaposition/blink-cmp-copilot",
+		},
+		opts = {
+			sources = {
+				default = { "lsp", "path", "snippets", "buffer", "copilot" },
+				providers = {
+					copilot = {
+						name = "copilot",
+						module = "blink-cmp-copilot",
+						score_offset = 100,
+						async = true,
+						transform_items = function(_, items)
+							local CompletionItemKind = require("blink.cmp.types").CompletionItemKind
+							local kind_idx = #CompletionItemKind + 1
+							CompletionItemKind[kind_idx] = "Copilot"
+							for _, item in ipairs(items) do
+								item.kind = kind_idx
+							end
+							return items
+						end,
+					},
+				},
+			},
+			appearance = {
+				kind_icons = {
+					Text = "",
+					Method = "",
+					Function = "",
+					Constructor = "",
+					Field = "",
+					Variable = "",
+					Class = "ﴯ",
+					Interface = "",
+					Module = "",
+					Property = "ﰠ",
+					Unit = "",
+					Value = "",
+					Enum = "",
+					Keyword = "",
+					Snippet = "",
+					Color = "",
+					File = "",
+					Reference = "",
+					Folder = "",
+					EnumMember = "",
+					Constant = "",
+					Struct = "",
+					Event = "",
+					Operator = "",
+					TypeParameter = "",
+					Copilot = "", -- custom icon for Copilot
+				},
+			},
+		},
+	},
 }

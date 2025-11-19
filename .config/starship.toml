@@ -136,7 +136,7 @@ symbol = "hg "
 truncation_symbol = "..."
 
 [hostname]
-format = "[@$hostname █]($style) "
+format = "[@$hostname█]($style) "
 ssh_only = false
 
 [java]

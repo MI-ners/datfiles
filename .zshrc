@@ -37,3 +37,9 @@ eval "$(starship init zsh)"
 
 export TERM=xterm-kitty
 
+
+# opencode
+export PATH=/home/miners/.opencode/bin:$PATH
+
+alias dev='tmux new-session -d -s dev "nvim ." \; new-window "opencode" \; new-window \; select-window -t dev:1 \; attach'
+

@@ -4,8 +4,8 @@ return {
 		"zbirenbaum/copilot.lua",
 		config = function()
 			require("copilot").setup({
-				suggestion = { enabled = false }, -- disable ghost text
-				panel = { enabled = false }, -- disable Copilot panel
+				suggestion = { enabled = true }, -- disable ghost text
+				panel = { enabled = true }, -- disable Copilot panel
 			})
 		end,
 	},

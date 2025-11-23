@@ -7,6 +7,7 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				clangd = { "clang-format" },
+				gopls = { "goimports" },
 			},
 			format_on_save = {
 				timeout_ms = 500,

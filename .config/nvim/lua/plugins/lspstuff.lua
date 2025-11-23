@@ -11,7 +11,7 @@ return {
 		lazy = false,
 		config = function()
 			require("mason-lspconfig").setup({
-				ensure_installed = { "lua_ls", "pyright", "clangd" },
+				ensure_installed = { "lua_ls", "pyright", "clangd", "gopls" },
 			})
 			vim.lsp.config("lua_ls", { settings = {} })
 			vim.lsp.config("pyright", {})
@@ -19,6 +19,8 @@ return {
 			vim.lsp.enable("pyright")
 			vim.lsp.config("clangd", {})
 			vim.lsp.enable("clangd")
+			vim.lsp.config("gopls", {})
+			vim.lsp.enable("gopls")
 		end,
 	},
 	{

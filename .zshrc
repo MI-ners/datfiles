@@ -31,7 +31,7 @@ function y() {
 
 export EDITOR="nvim"
 
-alias updall='sudo pacman -Syu && yay -Sua'
+alias updall='yay -Syu'
 
 eval "$(starship init zsh)"
 
@@ -41,4 +41,9 @@ export TERM=xterm-kitty
 # opencode
 export PATH=/home/miners/.opencode/bin:$PATH
 
-alias dev='tmux new-session -d -s dev "nvim ." \; new-window "opencode" \; new-window \; select-window -t dev:1 \; attach'
+alias dev='tmux new-session -d -s dev "nvim ." \; new-window \; select-window -t dev:1 \; attach'
+
+export GOPATH=$HOME/go
+export PATH="$HOME/go/bin:$PATH"
+
+

@@ -58,7 +58,7 @@ return {
 	keys = {
 		-- Top Pickers & Explorer
 		{
-			"<leader><space>",
+			"<leader><leader>",
 			function()
 				Snacks.picker.smart()
 			end,

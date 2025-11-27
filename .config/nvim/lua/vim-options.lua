@@ -4,6 +4,8 @@ vim.cmd("set softtabstop=4")
 vim.opt.smartindent = true
 vim.opt.autoindent = true
 vim.opt.cindent = true
+vim.opt.swapfile = false
+vim.opt.winborder = "rounded"
 
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -33,6 +35,7 @@ vim.keymap.set("i", "<C-Space>", function()
 	require("blink.cmp").trigger()
 end, { silent = true })
 
+-- Accept either a cmp suggestion or a copilot suggestion
 vim.keymap.set("i", "<C-l>", function()
 	local ok, cmp = pcall(require, "blink.cmp")
 	if ok then

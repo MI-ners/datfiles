@@ -46,4 +46,5 @@ alias dev='tmux new-session -d -s dev "nvim ." \; new-window \; select-window -t
 export GOPATH=$HOME/go
 export PATH="$HOME/go/bin:$PATH"
 
-
+# lock in
+alias li='cat gols-for-currentlife'

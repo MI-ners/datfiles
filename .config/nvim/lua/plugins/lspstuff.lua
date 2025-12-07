@@ -21,6 +21,8 @@ return {
 			vim.lsp.enable("clangd")
 			vim.lsp.config("gopls", {})
 			vim.lsp.enable("gopls")
+			vim.lsp.config("glsl_analyzerl", {})
+			vim.lsp.enable("glsl_analyzer")
 		end,
 	},
 	{

@@ -1,21 +1,21 @@
 return {
-	-- GitHub Copilot engine
 	{
 		"zbirenbaum/copilot.lua",
 		config = function()
 			require("copilot").setup({
-				suggestion = { enabled = true }, -- disable ghost text
-				panel = { enabled = true }, -- disable Copilot panel
+				suggestion = { enabled = false },
+				panel = { enabled = false },
 			})
 		end,
 	},
-	-- blink.cmp with Copilot source
 	{
 		"saghen/blink.cmp",
+		version = "1.*",
 		dependencies = {
 			"giuxtaposition/blink-cmp-copilot",
 		},
 		opts = {
+			completion = { documentation = { auto_show = true } },
 			sources = {
 				default = { "lsp", "path", "snippets", "buffer", "copilot" },
 				providers = {

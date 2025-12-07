@@ -1,5 +1,5 @@
 vim.cmd("set tabstop=4")
-vim.opt.expandtab = true
+vim.opt.expandtab = false
 vim.cmd("set softtabstop=4")
 vim.opt.smartindent = true
 vim.opt.autoindent = true
